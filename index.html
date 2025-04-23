@@ -48,7 +48,7 @@
             align-items: flex-start;
             justify-content: flex-start;
             min-height: 100vh;
-            background-color: #f0f0f0;
+            background-color: #ffffff;
         }
         .top-bar {
             position: fixed;
@@ -74,7 +74,7 @@
             padding: 10px;
             z-index: 10;
             margin-top: 40px;
-            margin-left: 10px; /* Changed to 10px */
+            margin-left: 10px;
             display: flex;
             align-items: center;
         }
@@ -99,12 +99,18 @@
             transform: scale(0.9);
         }
         .text-container {
-            margin-left: 110px; /* Changed to 110px */
+            margin-left: 10px;
             margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
         }
         h1 {
             margin-top: 0;
             margin-bottom: 10px;
+        }
+        .services-content {
+            margin-left: 10px;
         }
 
     </style>
@@ -116,29 +122,8 @@
     <div class="top-left-button-container">
         <button onclick="checkPassword(); animateButtonColor(this);" class="styled-button">Go to Client Page</button>
     </div>
-    <div class = "text-container">
-        <h1>Hi</h1>
-        <p>This is a very basic webpage.</p>
-    </div>
-</body>
 
-    <body>
-    <h1>Services</h1>
-    <h3>Secretarial</h3>
-    <p>Desc.</p>
-    <h3> Book Keeping</h3>
-    <p>Desc.</p>
-    <h3>Compilation</h3>
-    <p>Desc.</p>
-    <h3>Tax</h3>
-    <p>Desc.</p>
-    <h3>GST</h3>
-    <p>Desc.</p>
-    <h3>Passes and Permits</h3>
-    <p>Desc.</p>
-    <h3>Payroll</h3>
-    <p>Desc.</p>
-    <button onclick="checkPassword()">Go to Client Page</button>
+
     
 </body>
 </html>
