@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Greeting</title>
+    <title>About Us</title>
     <script>
         function checkPassword() {
             var password = prompt("Enter the password:");
@@ -64,10 +64,13 @@
             font-family: Verdana, sans-serif;
             display: flex;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: space-between;
             padding-left: 10px;
+            padding-right: 10px;
             font-size: 16px;
             font-weight: bold;
+            box-sizing: border-box;
+            font-family: Verdana, sans-serif; /* Changed font-family to Verdana */
         }
 
         .top-left-button-container {
@@ -118,6 +121,7 @@
 <body>
     <div class = "top-bar">
         Sapling Services Pte Ltd
+        <a href="https://theofficialvajer.github.io/Sapling/services" style="color: white; text-decoration: underline;">Services</a>
     </div>
     <div class="top-left-button-container">
         <button onclick="checkPassword(); animateButtonColor(this);" class="styled-button">Go to Staff Page</button>
