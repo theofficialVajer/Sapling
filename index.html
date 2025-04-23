@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<img src="Sapling Logo.png" alt="Logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
-<span>Client Details</span>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Client Details</title>
+  <link rel="icon" href="Sapling Logo.png" type="image/png"> <!-- Favicon -->
   <style>
     body {
       font-family: Arial, sans-serif;
       padding: 20px;
+      margin-top: 50px; /* To avoid overlap with the fixed navbar */
     }
     table {
       width: 100%;
@@ -30,9 +30,36 @@
       font-weight: bold;
       margin-bottom: 10px;
     }
+    /* Styling for the navbar */
+    .navbar {
+      background-color: #333;
+      padding: 10px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      font-size: 16px;
+    }
+    .navbar a:hover {
+      background-color: #575757;
+    }
   </style>
 </head>
 <body>
+
+  <!-- Navbar with Services button -->
+  <div class="navbar">
+    <a href="https://www.example.com" target="_blank">Services</a>
+  </div>
+
   <h1>Client Details</h1>
   <table>
     <caption>Client Information</caption>
@@ -61,5 +88,6 @@
       </tr>
     </tbody>
   </table>
+
 </body>
 </html>
